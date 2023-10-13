@@ -341,8 +341,10 @@ nav {
 .group-address {
     background-image: url(../images/background-Address.png);
     background-size: cover;
+}
+.group-address img{
     width: 100%;
-    height: 600px;
+    object-fit: cover;
 }
 
 footer {
@@ -363,6 +365,87 @@ footer {
     display: block;
     word-wrap: break-word;
     color: #ffffff;
+    padding-bottom: 20px;
+}
+.tbn-address {
+    flex-basis: 15rem;
+    flex-grow: 9999;
+    border-radius: 2px 0 0 2px;
+    text-align: left;
+    min-height: 46px;
+    padding: 1px 10px;
+    width: 100%;
+}
+input {
+    border: 1px solid #cccccc;
+    background-color: #0000;
+    color: #000;
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: Crimson Text,serif;
+    font-style: normal;
+    font-weight: 400;
+    touch-action: manipulation;
+    font: inherit;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    max-width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%; 
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.group-input {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    padding-bottom: 50px;
+}
+.btn-subsribe {
+    border-radius: 0 2px 2px 0;
+    padding: 5px 10px;
+    user-select: none;
+    appearance: none;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #ff7606;
+    color: #fff;
+    font-family: Cardamon,serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    touch-action: manipulation;
+    font: inherit;
+    margin: 0;
+    text-indent: 0px;
+    text-shadow: none;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+.btn-subsribe:hover {
+    background-color: #c15700;
+    opacity: .9;
+}
+.doc {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:768px) {
