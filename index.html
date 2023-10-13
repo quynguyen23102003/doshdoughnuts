@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <script src="js/image.js"></script>
+        <script src="js/product.js"></script>
 </head>
 <body>
     <p class="announcement-bar"></p>
     <header>
-        <img src="images/logo.png" class="img-logo">
+        <img alt="" src="images/logo.png" class="img-logo">
         <div class="icon-header">
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="far fa-user" aria-hidden="true"></i>
@@ -28,7 +29,7 @@
             <i class="fas fa-bars"></i>
             <!-- <img src="img/icon _menu_.png" class="icon-menu"> -->
         </label>
-        <input type="checkbox" id="toggle-menu">
+        <input  type="checkbox" id="toggle-menu">
         <ul class="menu">
             <li class="active">
                 <a href="index.html">Home</a>
@@ -48,10 +49,10 @@
         </ul>
     </nav>
     <div class="anh">
-        <img src="images/0.png" id="anh">
+        <img alt="" src="https://th.bing.com/th/id/OIP.SLyRirgG5mqr1nZ6oGmRzAAAAA?pid=ImgDet&rs=1" id="anh">
         <div class="text">
             <div class="btn-move">
-                <button onclick="prev()" class="button">
+                <button  onclick="prev()" class="button">
                     <i class="fas fa-angle-left" aria-hidden="true"></i>
                 </button>
                 <button onclick="next()" class="button">
@@ -100,13 +101,38 @@
             </span>
         </div>
         <h2 class="txt-Title">OUR DOUGHNUT MENU ( 01.10 - 31.10 )</h2>
-        <!-- <div class="group-products">
+        <div  class="group-products" id="product-container">
             <div class="product">
-                <span class="img-product"></span>
-                <div class="title-product">Original Glazed (OG)</div>
-                <div class="price-product">32.000₫</div>
+                <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
+                    <img src="images/NewYork.jpg" alt="Original Glazed (OG)">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
             </div>
-        </div> -->
+            <div class="product">
+                <img src="https://doshdoughnuts.com/cdn/shop/products/front_f612418f-7d86-4912-bc7b-3442a2f2c73b_1024x1024@2x.png?v=1589349237" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://doshdoughnuts.com/cdn/shop/files/Anh_chup_Man_hinh_2021-07-25_luc_23.07.23-removebg-preview_2_1024x1024@2x.png?v=1684126915" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://doshdoughnuts.com/cdn/shop/products/front_f612418f-7d86-4912-bc7b-3442a2f2c73b_1024x1024@2x.png?v=1589349237" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </div>
+        </div>
         <div class="btn">
             <button class="btn-viewAll">VIEW ALL</button>
         </div>
