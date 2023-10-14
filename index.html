@@ -20,7 +20,7 @@
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="far fa-user" aria-hidden="true"></i>
             <div class="cart-btn">
-                <i id="cart" class="fas fa-shopping-cart"></i>
+                <i id="cart" class="fas fa-shopping-bag"></i>
                   <span class ="cart-quantity">0</span>
               </div>
         </div>
@@ -267,22 +267,70 @@
     </footer>
     <div class="cart-modal-overlay">
         <div class="cart-modal">
+            <header>
+                <img alt="" src="images/logo.png" class="img-logo">
+            </header>
+          
+            <nav>
+                <label for="toggle-menu" class="btn-toggle-menu">
+                    <i class="fas fa-bars"></i>
+                    <!-- <img src="img/icon _menu_.png" class="icon-menu"> -->
+                </label>
+                <input type="checkbox" id="toggle-menu">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="">Our Menu</a>
+                    </li>
+                    <li class="">
+                        <a href="MonthlyMenu.html">Monthly Doughnut Menu</a>
+                    </li>
+                    <li class="">
+                        <a href="">Seasonal Doughnuts Set</a>
+                    </li>
+                    <li class="">
+                        <a href="tuyenDung.html">Career</a>
+                    </li>
+                </ul>
+            </nav>
             <i id="close-btn" class="fas fa-times"></i>
             <h1 class="cart-is-empty">Cart is empty</h1>
             <div class="product-rows">
             </div>
             <div class="total">
-                <h1 class="cart-total">TOTAL</h1>
-                <span class="total-price">$0</span>
-                <button class="purchase-btn">Check Out</button>
+                <div class="group-title">
+                    <h1 class="cart-total">TOTAL: </h1>
+                    <span class="total-price">0</span>
+                </div>
+                <div class="group-purchase-btn">
+                    <button class="purchase-btn">Check Out</button>
+                </div>
             </div>
+            <footer>
+                <div class="h4">Sign Me Up for Monthly Special!</div>
+                <div class="group-input">
+                    <input type="text" placeholder="Email address" class="tbn-address">
+                    <button class="btn-subsribe">SUBSRIBE</button>
+                </div>
+                <div class="doc"></div>
+                <div class="adress">
+                    <div class="icon-footer">
+                        <a href="">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="Dosh">© 2023, Dosh Doughnuts Powered by Shopify</div>
+                </div>
+            </footer>
         </div>
-    </div>
-
-    <!--   end of cart modal -->
-    <div class="cart-btn">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="cart-quantity">0</span>
     </div>
     <script src="js/add_cart.js"></script>
     <script src="js/image.js"></script>

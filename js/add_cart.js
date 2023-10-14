@@ -118,7 +118,7 @@ function updateCartPrice() {
         total = total + (price * quantity)
 
     }
-    document.getElementsByClassName('total-price')[0].innerText = '$' + total + ".000₫"
+    document.getElementsByClassName('total-price')[0].innerText = total + ".000₫"
 
     document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
