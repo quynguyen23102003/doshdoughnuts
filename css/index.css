@@ -69,6 +69,7 @@ header {
 }
 
 nav {
+    justify-content: center;
     display: flex;
     align-items: center;
     padding-bottom: 50px;
@@ -847,4 +848,7 @@ strong {
     border: none;
     cursor: pointer;
     font-weight: bolder;
+}
+.cart-image{
+    width: 10%;
 }

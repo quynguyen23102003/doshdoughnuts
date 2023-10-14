@@ -1,21 +1,15 @@
 // open cart modal
-
-const cart = document.querySelector('.btnAddCart');
+const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
-const urlParams = new URLSearchParams(window.location.search);
-var title = urlParams.get("title");
-var image = urlParams.get("image");
-var price = urlParams.get("price");
 
 cart.addEventListener('click', () => {
     if (cartModalOverlay.style.transform === 'translateX(-200%)') {
         cartModalOverlay.style.transform = 'translateX(0)';
-        addItemToCart(title, price, image);
-        updateCartPrice()
     } else {
         cartModalOverlay.style.transform = 'translateX(-200%)';
     }
 })
+// end of open cart modal
 
 // close cart modal
 const closeBtn = document.querySelector('#close-btn');
@@ -29,10 +23,10 @@ cartModalOverlay.addEventListener('click', (e) => {
         cartModalOverlay.style.transform = 'translateX(-200%)'
     }
 })
-
 // end of close cart modal
 
 // add products to cart
+const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
 
 for (var i = 0; i < addToCart.length; i++) {
@@ -40,6 +34,16 @@ for (var i = 0; i < addToCart.length; i++) {
     button.addEventListener('click', addToCartClicked)
 }
 
+function addToCartClicked(event) {
+    button = event.target;
+    var cartItem = button.parentElement;
+    var title = cartItem.getElementsByClassName('title-product')[0].innerText;
+    var price = cartItem.getElementsByClassName('price-product')[0].innerText;
+
+    var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+    addItemToCart(title, price, imageSrc);
+    updateCartPrice()
+}
 
 function addItemToCart(title, price, imageSrc) {
     var productRow = document.createElement('div');
@@ -55,15 +59,15 @@ function addItemToCart(title, price, imageSrc) {
     }
 
     var cartRowItems = `
-   <div class="product-row">
-         <img class="cart-image" src="${imageSrc}" alt="">
-         <span class ="cart-name">${title}</span>
-         <span class ="cart-price">${price}</span>
-         <input class="product-quantity" type="number" value="1">
-         <button class="remove-btn">Remove</button>
-         </div>
-         
-       `
+  <div class="product-row">
+        <img class="cart-image" src="${imageSrc}" alt="">
+        <div class ="cart-name">${title}</div>
+        <div class ="cart-price">${price}</div>
+        <input class="product-quantity" type="number" value="1">
+        <button class="remove-btn">Remove</button>
+        </div>
+        
+      `
     productRow.innerHTML = cartRowItems;
     productRows.append(productRow);
     productRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
@@ -114,7 +118,7 @@ function updateCartPrice() {
         total = total + (price * quantity)
 
     }
-    document.getElementsByClassName('total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('total-price')[0].innerText = '$' + total + ".000₫"
 
     document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
@@ -133,7 +137,10 @@ function purchaseBtnClicked() {
     var cartItems = document.getElementsByClassName('product-rows')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
+
     }
     updateCartPrice()
 }
 // end of purchase items
+
+//alert user if cart is empty

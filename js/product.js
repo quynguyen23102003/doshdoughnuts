@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = urlParams.get("title");
     const price = urlParams.get("price");
 
-    const productImage = document.querySelector(".detail img");
+    const productImage = document.querySelector(".image img");
     const productTitle = document.querySelector(".content h1");
     const productPrice = document.querySelector(".content .price");
 
