@@ -10,10 +10,10 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
-    <p class="announcement-bar"></p>
     <header>
         <img alt="" src="images/logo.png" class="img-logo">
         <div class="icon-header">
@@ -21,30 +21,31 @@
             <i class="far fa-user" aria-hidden="true"></i>
             <i class="cart-btn">
                 <i id="cart" class="fas fa-shopping-bag"></i>
-                <span class="cart-quantity">0</span>
+                  <span class ="cart-quantity">0</span>
             </i>
         </div>
     </header>
     <nav>
         <label for="toggle-menu" class="btn-toggle-menu">
             <i class="fas fa-bars"></i>
+            <!-- <img src="img/icon _menu_.png" class="icon-menu"> -->
         </label>
-        <input type="checkbox" id="toggle-menu">
+        <input  type="checkbox" id="toggle-menu">
         <ul class="menu">
-            <li class="active">
+            <li class="">
                 <a href="index.html">Home</a>
             </li>
             <li class="">
-                <a href="product.html">Our Menu</a>
+                <a href="">Our Menu</a>
+            </li>
+            <li class="active">
+                <a href="MonthlyMenu.html">Monthly Doughnut Menu</a>
             </li>
             <li class="">
-                <a href="New.html">Monthly</a>
+                <a href="">Seasonal Doughnuts Set</a>
             </li>
             <li class="">
-                <a href="Giohang1.html">Seasonal Doughnuts Set</a>
-            </li>
-            <li class="">
-                <a href="login.html">Career</a>
+                <a href="tuyenDung.html">Career</a>
             </li>
         </ul>
     </nav>
@@ -68,51 +69,92 @@
                     <p>The Crème de la Creme Custard and the sweet and bitter chocolate blends must be the
                         perfect way to start the new year, do you know that?</p>
                 </div>
+                <div class="sotify">
+                    <a href="" class="fab fa-facebook-square" aria-hidden="true">
+                        <i>SHARE</i>
+                    </a>
+                    <a href="" class="fab fa-twitter" aria-hidden="true">
+                        <i>TWEET</i>
+                    </a>
+                    <a href="" class="fab fa-pinterest" aria-hidden="true">
+                        <i>PIN IT</i>
+                    </a>
+                </div>
             </div>
         </div>
         </br></br></br>
-        <div class="title">Similar product</div>
+        <h2 class="txt-Title">Similar product</h2>
     </div>
-    <div class="group-products" id="simular">
-        <div class="product">
-            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
-                <img src="images/NewYork.jpg" alt="Original Glazed (OG)">
-                <div class="product-details">
-                    <div class="title-product">Original Glazed (OG)</div>
-                    <div class="price-product">32.000₫</div>
-                </div>
-            </a>
+    <main>
+        <div  class="group-products" id="product-container">
+            <div class="product">
+                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
+                    <img src="images/sp1.png" alt="Boston Cream">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp2.png&title=Original Glazed (OG)%20Name&price=220.000">
+                    <img src="images/sp2.png" alt="Original Glazed (OG)">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp3.png&title=Toasted Marshmallow%20Name&price=170.000">
+                    <img src="images/sp3.png" alt="Toasted Marshmallow">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp4.png&title=Toasted Marshmallow%20Name&price=40.000">
+                    <img src="images/sp4.png" alt="Toasted Marshmallow">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
+                    <img src="images/sp1.png" alt="Boston Cream">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG)</div>
+                        <div class="price-product">32.000₫</div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="product">
-            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
-                <img src="images/NewYork.jpg" alt="Original Glazed (OG)">
-                <div class="product-details">
-                    <div class="title-product">Original Glazed (OG)</div>
-                    <div class="price-product">32.000₫</div>
-                </div>
-            </a>
-        </div>
-        <div class="product">
-            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
-                <img src="images/NewYork.jpg" alt="Original Glazed (OG)">
-                <div class="product-details">
-                    <div class="title-product">Original Glazed (OG)</div>
-                    <div class="price-product">32.000₫</div>
-                </div>
-            </a>
-        </div>
-        <div class="product">
-            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
-                <img src="images/NewYork.jpg" alt="Original Glazed (OG)">
-                <div class="product-details">
-                    <div class="title-product">Original Glazed (OG)</div>
-                    <div class="price-product">32.000₫</div>
-                </div>
-            </a>
-        </div>
-    </div>
+    </main>
     <footer>
         <div class="h4">Sign Me Up for Monthly Special!</div>
+        <div class="group-input">
+            <input type="text" placeholder="Email address" class="tbn-address">
+            <button class="btn-subsribe">SUBSRIBE</button>
+        </div>
+        <div class="doc"></div>
+        <div class="adress">
+            <div class="icon-footer">
+                <a href="">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-pinterest" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="Dosh">© 2023, Dosh Doughnuts Powered by Shopify</div>
+        </div>
     </footer>
 </body>
 

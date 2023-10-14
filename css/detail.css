@@ -104,40 +104,106 @@ a{
 .btnCheckout{
     display: block;
     width: 100%;
-    line-height: 1;
-    border-width: 2px;
+    line-height: 1.4;
     padding-left: 5px;
     padding-right: 5px;
+    white-space: normal;
     margin-top: 0;
-    color: #ff7100;
-    font-size: 15px;
     margin-bottom: 10px;
     min-height: 44px;
     background-color: #fff;
+    color: #ff7100;
     border-color: #ff7100;
+    user-select: none;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ff7100;
     border-radius: 2px;
+    font-family: Cardamon,serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 13px;
 }
 .btnAddCart{
     display: block;
     width: 100%;
-    line-height: 1;
-    color: #ffffff;
-    font-size: 15px;
-    border-width: 2px;
+    line-height: 1.4;
     padding-left: 5px;
     padding-right: 5px;
+    white-space: normal;
     margin-top: 0;
     margin-bottom: 10px;
     min-height: 44px;
-    background-color: #ff7100;
-    border: none;
+    padding: 10px 18px;
+    user-select: none;
+    appearance: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
     border-radius: 2px;
+    background-color: #ff7100;
+    color: #fff;
+    font-family: Cardamon,serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 13px;
+}
+.btnAddCart:hover {
+    background-color: #e66700;
 }
 #simular{
     padding: 20px 150px 50px 150px;
 }
 .detail .description{
-    font-weight: 300;
+    box-sizing: border-box;
+    color: #333232;
+    font-size: 15px;
+    font-family: Crimson Text,serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.sotify {
+    margin-top: 20px;
+}
+.sotify a{
+    border: 1px solid #e2e2e2;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.sotify .fa-facebook-square {
+    color: rgb(59, 89, 152);
+}
+.sotify .fa-twitter {
+    color: rgb(0, 172, 237);
+}
+.sotify .fa-pinterest {
+    color: rgb(203, 34, 41);
+}
+.sotify a i{
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #3a3a3a;
+    font-size: .8em;
+    line-height: 1;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: Cardamon,serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: normal;
+    margin-left: 4px;
 }
 /* // ipad */
 @media only screen and (max-width: 992px) {
