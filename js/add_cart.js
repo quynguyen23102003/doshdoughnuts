@@ -144,3 +144,4 @@ function purchaseBtnClicked() {
 // end of purchase items
 
 //alert user if cart is empty
+

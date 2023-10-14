@@ -27,7 +27,3 @@ function next() {
     anh.src = images[index].src;
     document.getElementById("mota").innerHTML = mota[index];
 }
-
-
-
-setInterval("next()", 3000);

@@ -29,10 +29,10 @@
 }
 .card {
     /*   width: 15rem; */
-      margin: 1em;
-      position: relative;
-      overflow: hidden; 
-      text-align: center
+    margin: 1em;
+    position: relative;
+    overflow: hidden; 
+    text-align: center
 }
 .cart-modal-overlay {
     position: fixed;
@@ -209,3 +209,4 @@
       margin: .5em 0 .5em 0
     }
   }
+
