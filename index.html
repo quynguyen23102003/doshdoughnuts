@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  
+        <script src="js/image.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <div class="cart-btn" >
                 <i id="cart" class="fas fa-shopping-bag"></i>
                   <span class ="cart-quantity">0</span>
-              </div>
+            </div>
         </div>
     </header>
   
@@ -37,13 +37,47 @@
                 <a href="index.html">Home</a>
             </li>
             <li class="">
-                <a href="">Our Menu</a>
+                <a href="OurMenu.html">Our Menu<i id="cart" class="fa fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#">All Doughnuts</a></li>
+                    <li><a href="#">Tarts</a></li>
+                    <li><a href="#">Cheesecakes</a></li>
+                    <li><a href="#">Brownies</a></li>
+                    <li><a href="#">Birthday Cakes</a></li>
+                    <li><a href="#">New York Cookies</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
             </li>
             <li class="">
                 <a href="MonthlyMenu.html">Monthly Doughnut Menu</a>
             </li>
             <li class="">
-                <a href="">Seasonal Doughnuts Set</a>
+                <a href="Seasonal.html">Seasonal Doughnuts Set<i id="cart" class="fa fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#">'23 Tết - Fullness</a></li>
+                    <li><a href="#">'22 Tết - Christmas</a></li>
+                    <li><a href="#">'22 - Halloween</a></li>
+                    <li><a href="#">'22 - Mid Autumn</a></li>
+                    <li><a href="#">'22 Easter - Lễ Phục Sinh</a></li>
+                    <li><a href="#">'22 Pack A Punch</a></li>
+                    <li><a href="#">'22 Christmas - What A Year!</a></li>
+                    <li><a href="#">'21 - Give your afternoon a lift</a></li>
+                    <li><a href="#">'21 - Revive the rhythm of spring - a new beginning</a></li>
+                    <li><a href="#">'21 - When East meets West</a></li>
+                    <li><a href="#">'20 - Halloween</a></li>
+                    <li><a href="#">'20 - Exotic Summer</a></li>
+                    <li><a href="#">'20 - Spring is Blooming</a></li>
+                    <li><a href="#">'19 - Moon - Doughnuts</a></li>
+                    <li><a href="#">'19 - Christmas is coming</a></li>
+                    <li><a href="#">'19 - Beach Vibes</a></li>
+                    <li><a href="#">'19 - Autumn Flowers in May</a></li>
+                    <li><a href="#">'19 - A Gift from Nature</a></li>
+                    <li><a href="#">'18 - In the last Days of the Year</a></li>
+                    <li><a href="#">'18 - Colorful Summer</a></li>
+                    <li><a href="#">'17 - The Color of Autumn</a></li>
+                    <li><a href="#">'17 - Fresh Oranges</a></li>
+                    <li><a href="#">'17 - Autumn's Daisy</a></li>
+                </ul>
             </li>
             <li class="">
                 <a href="tuyenDung.html">Career</a>
@@ -51,7 +85,7 @@
         </ul>
     </nav>
     <div class="anh">
-        <img alt="" src="https://th.bing.com/th/id/OIP.SLyRirgG5mqr1nZ6oGmRzAAAAA?pid=ImgDet&rs=1" id="anh">
+        <img src="images/0.png" id="anh">
         <div class="text">
             <div class="btn-move">
                 <button onclick="prev()" class="button">
@@ -105,28 +139,28 @@
         <h2 class="txt-Title">OUR DOUGHNUT MENU ( 01.10 - 31.10 )</h2>
         <div class="group-products" id="product-container">
             <div class="product">
-                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
-                    <img class="product-image" src="images/sp1.png" alt="Boston Cream">
+                <a href="product_detail.html?image=images/sp1.png&title=The Forbidden Love%20Name&price=49.000₫">
+                    <img class="product-image" src="images/sp1.png" alt="The Forbidden Love">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">The Forbidden Love</div>
+                        <div class="price-product">49.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp2.png&title=Original Glazed (OG)%20Name&price=220.000">
-                    <img class="product-image" src="images/sp2.png" alt="Original Glazed (OG)">
+                <a href="product_detail.html?image=images/sp2.png&title=The Spectacular Italian Tiramisu%20Name&price=65.000₫">
+                    <img class="product-image" src="images/sp2.png" alt="The Spectacular Italian Tiramisu">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">The Spectacular Italian Tiramisu</div>
+                        <div class="price-product">65.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp3.png&title=Toasted Marshmallow%20Name&price=170.000">
-                    <img class="product-image" src="images/sp3.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp3.png&title=Original Glazed (OG)%20Name&price=32.000₫">
+                    <img class="product-image" src="images/sp3.png" alt="Original Glazed (OG)">
                     <div  class="product-details">
                         <div class="title-product">Original Glazed (OG)</div>
                         <div class="price-product">32.000₫</div>
@@ -135,98 +169,126 @@
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp4.png&title=Toasted Marshmallow%20Name&price=40.000">
-                    <img class="product-image" src="images/sp4.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp4.png&title=Traditional Vietnamese Coffee%20Name&price=43.000₫">
+                    <img class="product-image" src="images/sp4.png" alt="Traditional Vietnamese Coffee">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-                <button class="add-to-cart">Add to cart</button>
-            </div>
-
-            <div class="product">
-                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
-                    <img class="product-image" src="images/sp1.png" alt="Boston Cream">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Traditional Vietnamese Coffee</div>
+                        <div class="price-product">43.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp2.png&title=Original Glazed (OG)%20Name&price=220.000">
-                    <img class="product-image" src="images/sp2.png" alt="Original Glazed (OG)">
+                <a href="product_detail.html?image=images/sp6.png&title=Boston Cream%20Name&price=49.000₫">
+                    <img class="product-image" src="images/sp6.png" alt="Boston Cream">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Boston Cream</div>
+                        <div class="price-product">49.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp3.png&title=Toasted Marshmallow%20Name&price=170.000">
-                    <img class="product-image" src="images/sp3.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp7.png&title=Chocolate Sprinkles%20Name&price=39.000₫">
+                    <img class="product-image" src="images/sp7.png" alt="Chocolate Sprinkles">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Chocolate Sprinkles</div>
+                        <div class="price-product">39.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp4.png&title=Toasted Marshmallow%20Name&price=40.000">
-                    <img class="product-image" src="images/sp4.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp8.png&title=Golden Caramel%20Name&price=39.000₫">
+                    <img class="product-image" src="images/sp8.png" alt="Golden Caramel">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Golden Caramel</div>
+                        <div class="price-product">39.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
-                    <img class="product-image" src="images/sp1.png" alt="Boston Cream">
+                <a href="product_detail.html?image=images/sp9.png&title=Toasted Marshmallow%20Name&price=43.000₫">
+                    <img class="product-image" src="images/sp9.png" alt="Toasted Marshmallow">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Toasted Marshmallow</div>
+                        <div class="price-product">43.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp2.png&title=Original Glazed (OG)%20Name&price=220.000">
-                    <img class="product-image" src="images/sp2.png" alt="Original Glazed (OG)">
+                <a href="product_detail.html?image=images/sp10.png&title=Passion Passionfruit%20Name&price=39.000₫">
+                    <img class="product-image" src="images/sp10.png" alt="Passion Passionfruit">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Passion Passionfruit</div>
+                        <div class="price-product">39.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp3.png&title=Toasted Marshmallow%20Name&price=170.000">
-                    <img class="product-image" src="images/sp3.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp11.png&title=Rosewater Mist%20Name&price=43.000₫">
+                    <img class="product-image" src="images/sp11.png" alt="Rosewater Mist">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Rosewater Mist</div>
+                        <div class="price-product">43.000₫</div>
                     </div>
                 </a>
                 <button class="add-to-cart">Add to cart</button>
             </div>
             <div class="product">
-                <a href="product_detail.html?image=images/sp4.png&title=Toasted Marshmallow%20Name&price=40.000">
-                    <img class="product-image" src="images/sp4.png" alt="Toasted Marshmallow">
+                <a href="product_detail.html?image=images/sp6.png&title=Boston Cream%20Name&price=49.000₫">
+                    <img class="product-image" src="images/sp6.png" alt="Boston Cream">
                     <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
+                        <div class="title-product">Boston Cream</div>
+                        <div class="price-product">49.000₫</div>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp13.png&title=Original Glazed (OG)%20Name&price=220.000₫">
+                    <img class="product-image" src="images/sp13.png" alt="Original Glazed (OG)">
+                    <div class="product-details">
+                        <div class="title-product">Original Glazed (OG) Name</div>
+                        <div class="price-product">220.000₫</div>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp14.png&title=Toasted Marshmallow%20Name&price=170.000₫">
+                    <img class="product-image" src="images/sp14.png" alt="Toasted Marshmallow">
+                    <div class="product-details">
+                        <div class="title-product">Toasted Marshmallow Name</div>
+                        <div class="price-product">170.000₫</div>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product">
+                <a href="product_detail.html?image=images/sp15.png&title=Chocolate Ganache%20Name&price=43.000₫">
+                    <img class="product-image" src="images/sp15.png" alt="Chocolate Ganache">
+                    <div class="product-details">
+                        <div class="title-product">Chocolate Ganache</div>
+                        <div class="price-product">43.000₫</div>
 
                     </div>
                     <button class="add-to-cart">Add to cart</button>
                 </a>
             </div>
-
+            <div class="product">
+                <a href="product_detail.html?image=images/sp6.png&title=Boston Cream%20Name&price=49.000₫">
+                    <img class="product-image" src="images/sp6.png" alt="Boston Cream">
+                    <div class="product-details">
+                        <div class="title-product">Boston Cream</div>
+                        <div class="price-product">49.000₫</div>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
         </div>
         <div class="btn">
             <button class="btn-viewAll">VIEW ALL</button>
@@ -341,7 +403,7 @@
         let mybutton = document.getElementById("myBtn");
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
@@ -349,7 +411,6 @@
         }
     </script>
     <script src="js/add_cart.js"></script>
-    <script src="js/image.js"></script>
     <script src="js/product.js"></script>
 </body>
 

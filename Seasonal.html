@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,22 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <script src="js/image.js"></script>
-        <script src="js/product.js"></script>
 </head>
+
 <body>
+    <p class="announcement-bar"></p>
     <header>
         <img alt="" src="images/logo.png" class="img-logo">
         <div class="icon-header">
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="far fa-user" aria-hidden="true"></i>
-            <i class="cart-btn">
+            <div class="cart-btn" >
                 <i id="cart" class="fas fa-shopping-bag"></i>
                   <span class ="cart-quantity">0</span>
-            </i>
+            </div>
         </div>
     </header>
+  
     <nav>
         <label for="toggle-menu" class="btn-toggle-menu">
             <i class="fas fa-bars"></i>
@@ -48,7 +51,7 @@
             <li class="">
                 <a href="MonthlyMenu.html">Monthly Doughnut Menu</a>
             </li>
-            <li class="">
+            <li class="active">
                 <a href="Seasonal.html">Seasonal Doughnuts Set<i id="cart" class="fa fa-angle-down"></i></a>
                 <ul class="sub-menu">
                     <li><a href="#">'23 Tết - Fullness</a></li>
@@ -76,69 +79,11 @@
                     <li><a href="#">'17 - Autumn's Daisy</a></li>
                 </ul>
             </li>
-            <li class="active">
+            <li class="">
                 <a href="tuyenDung.html">Career</a>
             </li>
         </ul>
     </nav>
-    <main>
-        <div class="text-center">
-            <h1>Career/ Tuyển Dụng</h1>
-        </div>
-        <div class="img-tuyenDung">
-            <img src="images/1_bd9928ca-c80f-42c9-a92c-5464ec00dacf.png" alt="">
-        </div>
-        <p class="p_tuyenDung">
-            <strong>BẤM VÀO ĐÂY ĐỂ NỘP HỒ SƠ</strong>
-        </p>
-        <p class="p_tuyenDung">
-            <strong>Thu Ngân, Pha Chế, Phục Vụ</strong>
-        </p>
-        <p class="p_tuyenDung">
-            <a href="https://forms.gle/KFr7uD5tHNzYcqsJA" aria-describedby="a11y-external-message">https://forms.gle/pmuf5paQYVueS2ZTA</a>
-        </p>
-        <p class="p_tuyenDung">
-            <strong>Bếp Bánh (Bếp Chính - Pastry Chef)</strong>
-        </p>
-        <p class="p_tuyenDung">
-            <a href="https://forms.gle/KFr7uD5tHNzYcqsJA" aria-describedby="a11y-external-message">https://forms.gle/GZ6KXEeE9TXYyEXr8&nbsp;</a>
-        </p>
-        <div class="img-tuyenDung">
-            <img src="images/2_9cce5567-9ecc-4b6c-84bb-0948143f991e.png" alt="">
-        </div>
-        <div class="img-tuyenDung">
-            <img src="images/3_c661cdc5-bd23-4257-90e6-60970e9d2366.png" alt="">
-        </div>
-        <div class="img-tuyenDung">
-            <img src="images/4_f1d5032c-f48f-4302-bc1b-314fb228a5e8.png" alt="">
-        </div>
-        <div class="img-tuyenDung">
-            <img src="images/5_011ed9e4-db0b-4afe-b443-262dc45c7feb.png" alt="">
-        </div>
-        <div class="img-tuyenDung">
-            <img src="images/6_6f820377-1c71-4888-870b-6c566752a1fb.png" alt="">
-        </div>
-        <div class="thong-tin">
-            <h2>
-                <strong>CÁC BẠN ĐIỀN THÔNG TIN CHO DOSH THEO LINK DƯỚI ĐÂY:</strong>
-            </h2>
-            <p>
-                <strong>Thu Ngân, Pha Chế, Phục Vụ</strong>
-            </p>
-            <p>
-                <a href="https://forms.gle/KFr7uD5tHNzYcqsJA" aria-describedby="a11y-external-message">https://forms.gle/GZ6KXEeE9TXYyEXr8&nbsp;</a>
-            </p>
-            <p>
-                <strong>Bếp Bánh (Bếp Phó - Sous Pastry Chef)</strong>
-            </p>
-            <p>
-                <a href="https://forms.gle/KFr7uD5tHNzYcqsJA" aria-describedby="a11y-external-message">https://forms.gle/GZ6KXEeE9TXYyEXr8&nbsp;</a>
-            </p>
-            <p>
-                <strong>và chờ tin của Dosh nhé, Dosh sẽ liên hệ sớm nhất với hồ sơ phù hợp với công việc.</strong>
-            </p>
-        </div>
-    </main>
     <footer>
         <div class="h4">Sign Me Up for Monthly Special!</div>
         <div class="group-input">
@@ -161,5 +106,73 @@
             <div class="Dosh">© 2023, Dosh Doughnuts Powered by Shopify</div>
         </div>
     </footer>
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+            <header>
+                <img alt="" src="images/logo.png" class="img-logo">
+            </header>
+          
+            <nav>
+                <label for="toggle-menu" class="btn-toggle-menu">
+                    <i class="fas fa-bars"></i>
+                    <!-- <img src="img/icon _menu_.png" class="icon-menu"> -->
+                </label>
+                <input type="checkbox" id="toggle-menu">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="">Our Menu</a>
+                    </li>
+                    <li class="">
+                        <a href="MonthlyMenu.html">Monthly Doughnut Menu</a>
+                    </li>
+                    <li class="">
+                        <a href="">Seasonal Doughnuts Set</a>
+                    </li>
+                    <li class="">
+                        <a href="tuyenDung.html">Career</a>
+                    </li>
+                </ul>
+            </nav>
+            <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+            <div class="product-rows">
+            </div>
+            <div class="total">
+                <div class="group-title">
+                    <h1 class="cart-total">TOTAL: </h1>
+                    <span class="total-price">0</span>
+                </div>
+                <div class="group-purchase-btn">
+                    <button class="purchase-btn">Check Out</button>
+                </div>
+            </div>
+            <footer>
+                <div class="h4">Sign Me Up for Monthly Special!</div>
+                <div class="group-input">
+                    <input type="text" placeholder="Email address" class="tbn-address">
+                    <button class="btn-subsribe">SUBSRIBE</button>
+                </div>
+                <div class="doc"></div>
+                <div class="adress">
+                    <div class="icon-footer">
+                        <a href="">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="Dosh">© 2023, Dosh Doughnuts Powered by Shopify</div>
+                </div>
+            </footer>
+        </div>
+  
 </body>
+
 </html>
