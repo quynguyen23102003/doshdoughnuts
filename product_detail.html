@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
@@ -59,7 +60,7 @@
                 <h1 class="name"></h1>
                 <div class="price"></div>
                 <button class="btnCheckout">Check Out</button>
-                <button class="btnAddCart">Add To Cart</button>
+                <button id="cart" class="btnAddCart">Buy Now</button>
                 <div class="description">
                     </br>
                     <p>Crème de la Creme Custard, Chocolate Dipped</p>
@@ -85,55 +86,44 @@
         </br></br></br>
         <h2 class="txt-Title">Similar product</h2>
     </div>
-    <main>
-        <div  class="group-products" id="product-container">
-            <div class="product">
-                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
-                    <img src="images/sp1.png" alt="Boston Cream">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="product_detail.html?image=images/sp2.png&title=Original Glazed (OG)%20Name&price=220.000">
-                    <img src="images/sp2.png" alt="Original Glazed (OG)">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="product_detail.html?image=images/sp3.png&title=Toasted Marshmallow%20Name&price=170.000">
-                    <img src="images/sp3.png" alt="Toasted Marshmallow">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="product_detail.html?image=images/sp4.png&title=Toasted Marshmallow%20Name&price=40.000">
-                    <img src="images/sp4.png" alt="Toasted Marshmallow">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="product_detail.html?image=images/sp1.png&title=Boston Cream%20Name&price=120.000">
-                    <img src="images/sp1.png" alt="Boston Cream">
-                    <div class="product-details">
-                        <div class="title-product">Original Glazed (OG)</div>
-                        <div class="price-product">32.000₫</div>
-                    </div>
-                </a>
-            </div>
+    <div class="group-products" id="simular">
+        <div class="product">
+            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
+                <img class="product-image" src="images/NewYork.jpg" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </a>
         </div>
-    </main>
+        <div class="product">
+            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
+                <img class="product-image" src="images/NewYork.jpg" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
+                <img class="product-image" src="images/NewYork.jpg" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product_detail.html?image=images/NewYork.jpg&title=Product2%20Name&price=20.000">
+                <img class="product-image" src="images/NewYork.jpg" alt="Original Glazed (OG)">
+                <div class="product-details">
+                    <div class="title-product">Original Glazed (OG)</div>
+                    <div class="price-product">32.000₫</div>
+                </div>
+            </a>
+        </div>
+    </div>
     <footer>
         <div class="h4">Sign Me Up for Monthly Special!</div>
         <div class="group-input">
@@ -156,6 +146,28 @@
             <div class="Dosh">© 2023, Dosh Doughnuts Powered by Shopify</div>
         </div>
     </footer>
+      <!-- Start DEMO HTML (Use the following code into your project)-->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">Check Out</button>
+        </div>
+      </div>
+</div>
+      
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i  class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+    <script src="js/add_cart.js"></script>
+
 </body>
 
 </html>
