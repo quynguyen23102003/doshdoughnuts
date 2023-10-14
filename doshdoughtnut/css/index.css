@@ -978,7 +978,7 @@ ul.sub-menu li a {
     color: white;
     position: absolute;
     top: 65%;
-    transform: translateX(350px);
+    transform: translateX(300px);
     transition: .5s ease;
     outline: none;
     border: none;
