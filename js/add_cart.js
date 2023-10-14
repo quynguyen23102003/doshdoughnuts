@@ -153,3 +153,15 @@ function purchaseBtnClicked() {
 
 //alert user if cart is empty
 
+// JavaScript để hiển thị hộp thoại khi ấn nút "Buy Now"
+document.getElementById("cart").addEventListener("click", function () {
+    document.getElementById("productDialog").style.display = "block";
+});
+
+// JavaScript để thêm sản phẩm vào giỏ hàng
+function addToCart() {
+    var quantity = document.getElementById("quantity").value;
+    // Thêm sản phẩm vào giỏ hàng ở đây
+    // Sau đó đóng hộp thoại
+    document.getElementById("productDialog").style.display = "none";
+}
