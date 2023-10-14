@@ -69,6 +69,7 @@ header {
 }
 
 nav {
+    justify-content: center;
     display: flex;
     align-items: center;
     padding-bottom: 50px;
@@ -866,4 +867,30 @@ strong {
     .group-products {
         grid-template-columns: 1fr 1fr;
     }
+}
+.product {
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+
+.product:hover .add-to-cart {
+    transform: translateX(0);
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 65%;
+    transform: translateX(300px);
+    transition: .5s ease;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.cart-image{
+    width: 10%;
 }
