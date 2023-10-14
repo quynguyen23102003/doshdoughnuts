@@ -19,7 +19,7 @@
         <div class="icon-header">
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="far fa-user" aria-hidden="true"></i>
-            <div class="cart-btn">
+            <div class="cart-btn" >
                 <i id="cart" class="fas fa-shopping-bag"></i>
                   <span class ="cart-quantity">0</span>
               </div>
@@ -331,7 +331,23 @@
                 </div>
             </footer>
         </div>
+  
     </div>
+    <div id="myBtn" class="cart" title="Go to top">
+        <i class="fas fa-shopping-bag"></i>
+        <span class ="cart-quantity-top">0</span>
+    </div>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    </script>
     <script src="js/add_cart.js"></script>
     <script src="js/image.js"></script>
     <script src="js/product.js"></script>

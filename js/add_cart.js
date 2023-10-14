@@ -1,7 +1,15 @@
 // open cart modal
 const cart = document.querySelector('#cart');
+const carto = document.querySelector('#myBtn');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
+carto.addEventListener('click', () => {
+    if (cartModalOverlay.style.transform === 'translateX(-200%)') {
+        cartModalOverlay.style.transform = 'translateX(0)';
+    } else {
+        cartModalOverlay.style.transform = 'translateX(-200%)';
+    }
+})
 cart.addEventListener('click', () => {
     if (cartModalOverlay.style.transform === 'translateX(-200%)') {
         cartModalOverlay.style.transform = 'translateX(0)';
@@ -120,7 +128,7 @@ function updateCartPrice() {
     }
     document.getElementsByClassName('total-price')[0].innerText = total + ".000₫"
 
-    document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
+    document.getElementsByClassName('cart-quantity-top')[0].textContent = document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
 // end of update total price
 
