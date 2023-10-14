@@ -137,3 +137,5 @@ function purchaseBtnClicked() {
     updateCartPrice()
 }
 // end of purchase items
+
+

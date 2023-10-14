@@ -754,6 +754,48 @@ strong {
     font-family: Crimson Text,serif;
     font-style: normal;
     line-height: 1.5;
+    text-decoration: underline;
+} 
+.thong-tin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thong-tin p {
+    margin: 15px;
+}
+.thong-tin h2 strong {
+    font-weight: 700;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-family: Cardamon,serif;
+    font-style: normal;
+    line-height: 1.2;
+    color: #333232;
+}
+.thong-tin p strong {
+    font-weight: 700;
+    margin-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+    font-family: Crimson Text,serif;
+    font-style: normal;
+    color: #333232;
+    line-height: 1.5;
+}
+.thong-tin p a{
+    color: #333232;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Crimson Text,serif;
+    font-style: normal;
+    line-height: 1.5;
+    text-decoration: underline;
 } 
 /* // ipad */
 @media only screen and (max-width: 992px) {
