@@ -258,35 +258,3 @@ a{
     z-index: 1000;
     text-align: center;
 }
-.btn-checkOutNow {
-    font-size: .6rem;
-    width: 10%;
-    font-weight: bolder;
-    background-color: #ff7100;
-    color: white;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px 0 10px 0;
-}
-.quantity-now{ 
-    padding: 5px;
-}
-.title-dialog {
-    color: black;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.price-dialog {
-    color: black;
-    font-size:1.2rem;
-    margin-left: 10px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-.image-dialog {
-    width: 40%;
-}
